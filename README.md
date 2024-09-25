@@ -1,6 +1,7 @@
 # jadaglass.github.io
 <html lang="en">
-   <link rel="stylesheet" href="styles.css">
+<head> <link rel="stylesheet" href="styles.css"> 
+   </head>
 
    <h1>Jada Glass
 </h1>

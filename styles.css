@@ -4,6 +4,7 @@ body, html {
     height: 100%; /* Ensures full height */
     font-family: Arial, sans-serif;
     display: flex;
+    flex-direction: column;
     justify-content: center; /* Centers content horizontally */
     align-items: center; /* Centers content vertically */
     background: linear-gradient(to bottom, #0033cc, #3a007c, #7b00b4); /* Intensified gradient colors */

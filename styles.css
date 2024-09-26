@@ -1,37 +1,54 @@
-body, html {
+/* Reset default margins and paddings */
+* {
     margin: 0;
     padding: 0;
-    height: 100%;
-    font-family: Arial, sans-serif;
-    background: linear-gradient(to bottom, #0033cc, #3a007c, #7b00b4); /* Gradient background */
-    display: flex; /* Added to align content */
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
+    box-sizing: border-box;
 }
 
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #0033cc, #3a007c, #7b00b4); /* Gradient background */
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center;     /* Center vertically */
+}
+
+/* Main container for the content */
 .container {
-    text-align: left; /* Align text to the left */
+    text-align: center; /* Center text */
     padding: 20px;
     background-color: white;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
-    width: 80%;
-    max-width: 800px; /* Increased max width for larger content */
+    width: 80%; 
+    max-width: 800px; /* Increased width */
 }
 
 /* Header styling */
 h1 {
     font-family: 'Georgia', serif;
-    color: #ffffff; /* White color to contrast with the vibrant gradient */
+    color: #0033cc; /* Darker color to contrast */
     margin-bottom: 20px;
     font-size: 3em; /* Increased font size */
 }
 
-/* Styling for the links list */
+/* Paragraph text */
 p {
-    font-size: 1.5em; /* Increased paragraph font size */
+    font-size: 1.5em; /* Increased paragraph text size */
+    margin-bottom: 20px;
 }
 
+/* Image styling */
+.profile-image {
+    border-radius: 50%;
+    width: 200px; /* Increased size */
+    height: 200px; /* Keep aspect ratio */
+    margin-bottom: 20px;
+}
+
+/* List styling */
 ul.custom-list {
     list-style-type: none;
     padding: 0;
@@ -43,16 +60,16 @@ ul.custom-list li {
 
 ul.custom-list li a {
     text-decoration: none;
-    color: #ffcc00; /* Intense yellow-gold for better contrast */
+    color: #ffcc00; /* More intense yellow-gold for better contrast */
     font-weight: bold;
-    font-size: 1.5em; /* Increased link font size */
+    font-size: 1.5em; /* Increased font size */
 }
 
 ul.custom-list li a:hover {
-    color: #ffffff; /* White on hover */
+    color: #0033cc; /* Dark blue on hover */
 }
 
-/* Footer navigation */
+/* Navigation */
 nav {
     margin-top: 20px;
 }
@@ -62,17 +79,9 @@ nav a {
     text-decoration: none;
     color: #ff3300; /* Stronger OrangeRed for high visibility */
     font-weight: bold;
-    font-size: 1.5em; /* Increased nav link font size */
+    font-size: 1.5em; /* Increased font size */
 }
 
 nav a:hover {
-    color: #ffffff; /* White on hover */
-}
-
-/* Image */
-img {
-    border-radius: 50%;
-    margin-bottom: 20px;
-    width: 200px; /* Increased image width */
-    height: 200px; /* Increased image height */
+    color: #0033cc; /* Dark blue on hover */
 }

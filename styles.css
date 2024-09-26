@@ -11,7 +11,7 @@ html, body {
     font-family: Arial, sans-serif;
     background: linear-gradient(to bottom, #0033cc, #3a007c, #7b00b4); /* Gradient background */
     display: flex;
-    justify-content: center; /* Center horizontally */
+    align-items: center;     /* Center vertically */
 }
 
 /* Main container for the content */

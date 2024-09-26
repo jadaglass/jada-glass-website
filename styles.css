@@ -7,7 +7,7 @@ body, html {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(to bottom, #f0f8ff, #e6e6fa, #dcdcdc); /* Soft gradient background */
+    background: linear-gradient(to bottom, #1e90ff, #6a5acd, #8b008b); /* More pigmented gradient */
 }
 
 .container {
@@ -23,7 +23,7 @@ body, html {
 /* Header styling */
 h1 {
     font-family: 'Georgia', serif;
-    color: #2c3e50; /* Dark slate blue */
+    color: #ffffff; /* White color to contrast with the pigmented gradient */
     margin-bottom: 20px;
 }
 
@@ -39,12 +39,12 @@ ul.custom-list li {
 
 ul.custom-list li a {
     text-decoration: none;
-    color: #3498db; /* Blue links */
+    color: #ffeb3b; /* Bright yellow to contrast against the background */
     font-weight: bold;
 }
 
 ul.custom-list li a:hover {
-    color: #2c3e50;
+    color: #ffffff; /* Change to white on hover */
 }
 
 /* Footer navigation */
@@ -55,12 +55,12 @@ nav {
 nav a {
     margin: 0 15px;
     text-decoration: none;
-    color: #e74c3c; /* Red links */
+    color: #ff6347; /* Tomato color for links */
     font-weight: bold;
 }
 
 nav a:hover {
-    color: #c0392b;
+    color: #ffffff; /* White on hover */
 }
 
 /* Image */
@@ -68,3 +68,4 @@ img {
     border-radius: 50%;
     margin-bottom: 20px;
 }
+

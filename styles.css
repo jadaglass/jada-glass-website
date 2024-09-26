@@ -7,7 +7,7 @@ body, html {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(to bottom, #0057e7, #4b0082, #9400d3); /* More intense gradient colors */
+    background: linear-gradient(to bottom, #0033cc, #3a007c, #7b00b4); /* Intensified gradient colors */
 }
 
 .container {
@@ -23,7 +23,7 @@ body, html {
 /* Header styling */
 h1 {
     font-family: 'Georgia', serif;
-    color: #ffffff; /* White color to contrast with the more saturated gradient */
+    color: #ffffff; /* White color to contrast with the vibrant gradient */
     margin-bottom: 20px;
 }
 
@@ -39,7 +39,7 @@ ul.custom-list li {
 
 ul.custom-list li a {
     text-decoration: none;
-    color: #ffd700; /* Gold for better contrast */
+    color: #ffcc00; /* More intense yellow-gold for better contrast */
     font-weight: bold;
 }
 
@@ -55,7 +55,7 @@ nav {
 nav a {
     margin: 0 15px;
     text-decoration: none;
-    color: #ff4500; /* OrangeRed for stronger contrast */
+    color: #ff3300; /* Stronger OrangeRed for high visibility */
     font-weight: bold;
 }
 
@@ -68,4 +68,3 @@ img {
     border-radius: 50%;
     margin-bottom: 20px;
 }
-

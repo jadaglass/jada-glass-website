@@ -9,7 +9,7 @@ html, body {
     height: 100%;
     margin: 0;
     font-family: Arial, sans-serif;
-    background: linear-gradient(to bottom, #0033cc, #3a007c, #7b00b4); /* Gradient background */
+    background: linear-gradient(to bottom, #3366ff, #6b33b2, #a64dcb; /* Gradient background */
     display: flex;
 }
 

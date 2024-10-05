@@ -7,35 +7,104 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            line-height: 1.6;
             margin: 20px;
             padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
         }
         h1 {
+            text-align: center;
             color: #2c3e50;
+            margin-bottom: 20px;
+        }
+        p {
+            text-align: center;
+            color: #555;
+            margin-bottom: 40px;
+            line-height: 1.8;
         }
         h2 {
             color: #2980b9;
+            text-align: center;
+            margin-bottom: 20px;
         }
-        p {
+        .movies-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 20px;
+        }
+        .movie-item {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            overflow: hidden;
+            text-align: center;
+        }
+        .movie-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .movie-item h3 {
+            color: #333;
+            font-size: 20px;
             margin: 10px 0;
+        }
+        .movie-item p {
+            color: #666;
+            margin: 5px 0 20px;
         }
     </style>
 </head>
 <body>
     <h1>8 Best Teen High School Movies from the 2000s</h1>
-    <p>The 2000s produced some of the best teen high school movies, capturing the essence of adolescence with humor, heart, and relatable drama. These films often combined sharp wit with genuine emotion, portraying the challenges of growing up, navigating friendships, and discovering identity. They stood out for their memorable characters, clever dialogue, and the way they tackled universal themes like love, self-acceptance, and the pressures of fitting in. Their impact lies in their ability to resonate with audiences of all ages, blending humor and life lessons in a way that remains timeless and influential in the teen movie genre.</p>
+    <p>The 2000s produced some of the best teen high school movies, capturing the essence of adolescence with humor, heart, and relatable drama. These films often combined sharp wit with genuine emotion, portraying the challenges of growing up, navigating friendships, and discovering identity.</p>
 
     <h2>Movies List</h2>
-    <ul>
-        <li><strong>Bring It On (2000)</strong><br>Directed By: Peyton Reed</li>
-        <li><strong>High School Musical (2006)</strong><br>Directed By: Kenny Ortega</li>
-        <li><strong>Mean Girls (2004)</strong><br>Directed By: Mark Waters</li>
-        <li><strong>The Cheetah Girls (2003)</strong><br>Directed By: Oz Scott</li>
-        <li><strong>Love and Basketball (2000)</strong><br>Directed By: Gina Prince-Bythewood</li>
-        <li><strong>Love Don’t Cost a Thing (2003)</strong><br>Directed By: Troy Byer</li>
-        <li><strong>Roll Bounce (2005)</strong><br>Directed By: Malcolm D. Lee</li>
-        <li><strong>ATL (2006)</strong><br>Directed By: Chris Robinson</li>
-    </ul>
+
+    <div class="movies-list">
+        <div class="movie-item">
+            <img src="https://via.placeholder.com/300x200" alt="Bring It On">
+            <h3>Bring It On (2000)</h3>
+            <p>Directed By: Peyton Reed</p>
+        </div>
+        <div class="movie-item">
+            <img src="https://via.placeholder.com/300x200" alt="High School Musical">
+            <h3>High School Musical (2006)</h3>
+            <p>Directed By: Kenny Ortega</p>
+        </div>
+        <div class="movie-item">
+            <img src="https://via.placeholder.com/300x200" alt="Mean Girls">
+            <h3>Mean Girls (2004)</h3>
+            <p>Directed By: Mark Waters</p>
+        </div>
+        <div class="movie-item">
+            <img src="https://via.placeholder.com/300x200" alt="The Cheetah Girls">
+            <h3>The Cheetah Girls (2003)</h3>
+            <p>Directed By: Oz Scott</p>
+        </div>
+        <div class="movie-item">
+            <img src="https://via.placeholder.com/300x200" alt="Love and Basketball">
+            <h3>Love and Basketball (2000)</h3>
+            <p>Directed By: Gina Prince-Bythewood</p>
+        </div>
+        <div class="movie-item">
+            <img src="https://via.placeholder.com/300x200" alt="Love Don’t Cost a Thing">
+            <h3>Love Don’t Cost a Thing (2003)</h3>
+            <p>Directed By: Troy Byer</p>
+        </div>
+        <div class="movie-item">
+            <img src="https://via.placeholder.com/300x200" alt="Roll Bounce">
+            <h3>Roll Bounce (2005)</h3>
+            <p>Directed By: Malcolm D. Lee</p>
+        </div>
+        <div class="movie-item">
+            <img src="https://via.placeholder.com/300x200" alt="ATL">
+            <h3>ATL (2006)</h3>
+            <p>Directed By: Chris Robinson</p>
+        </div>
+    </div>
 </body>
 </html>

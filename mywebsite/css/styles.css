@@ -152,3 +152,10 @@ nav ul li a:hover {
 .list2 .bookstore p {
     margin: 5px 0;
 }
+ footer {
+            text-align: center; /* Center text */
+            margin-top: 20px; /* Space above footer */
+            padding: 10px 0; /* Padding inside footer */
+            color: #555; /* Footer text color */
+            font-size: 0.9em; /* Slightly smaller font size */
+        }

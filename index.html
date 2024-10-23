@@ -89,21 +89,28 @@
         }
 
         /* Navigation */
-        nav {
-            margin-top: 20px;
+         nav {
+            text-align: center;
+            margin-bottom: 20px;
         }
 
-        nav a {
-            margin: 0 15px;
-            text-decoration: none;
-            color: #ff3300; /* Stronger OrangeRed for high visibility */
-            font-family: 'Montserrat', sans-serif; /* Use Montserrat for navigation */
-            font-weight: bold;
-            font-size: 1.5em; /* Increased font size */
+        nav ul {
+            list-style-type: none; /* Remove default list styling */
+            padding: 0; /* Remove padding */
         }
 
-        nav a:hover {
-            color: #0033cc; /* Dark blue on hover */
+        nav ul li {
+            display: inline; /* Display list items in a row */
+            margin-right: 20px; /* Space between links */
+        }
+
+        nav ul li a {
+            text-decoration: none; /* Remove underline from links */
+            color: #2980b9; /* Link color */
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline; /* Underline on hover */
         }
     </style>
 </head>

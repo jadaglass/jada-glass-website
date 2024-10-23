@@ -83,3 +83,34 @@ nav a {
 nav a:hover {
     color: #0033cc; /* Dark blue on hover */
 }
+
+nav {
+    position: absolute; /* Aligns the nav off to the left */
+    left: 20px; /* Adjust the distance from the left side */
+    top: 50px; /* Adjust the distance from the top */
+}
+
+nav ul {
+    list-style-type: none; /* Removes bullet points */
+    padding: 0; /* Removes default padding */
+}
+
+nav ul li {
+    margin-bottom: 10px; /* Adds space between links */
+}
+
+nav ul li a {
+    text-decoration: none; /* Removes underline from links */
+    color: #ff69b4; /* Cute pink color */
+    font-size: 18px; /* Increases font size */
+    font-family: 'Comic Sans MS', cursive; /* Adds a fun, cute font */
+    padding: 8px 12px; /* Adds padding for a cute button effect */
+    border: 2px solid #ff69b4; /* Adds a border with matching color */
+    border-radius: 10px; /* Rounded edges for a softer look */
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+nav ul li a:hover {
+    background-color: #ff69b4; /* Changes background on hover */
+    color: white; /* Changes text color on hover */
+}

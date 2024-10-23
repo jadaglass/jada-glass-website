@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Lora:wght@700&family=Montserrat:wght@600&family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <style>
-          * {
+        * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
@@ -18,11 +18,11 @@
         html, body {
             height: 100%;
             margin: 0;
-            font-family: 'Roboto', sans-serif; /* Use Roboto for body text */
-            background: linear-gradient(to bottom, #3366ff, #6b33b2, #a64dcb); /* Gradient background */
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(to bottom, #3366ff, #6b33b2, #a64dcb);
             display: flex;
-            justify-content: center; /* Centers content horizontally */
-            align-items: center; /* Centers content vertically */
+            justify-content: center;
+            align-items: center;
             flex-direction: column;
         }
 
@@ -37,32 +37,57 @@
             max-width: 800px; 
         }
 
+        /* Navigation */
+        nav {
+            margin-bottom: 20px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center; /* Center the nav items */
+        }
+
+        nav ul li {
+            display: inline; 
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #2980b9;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
         /* Header styling */
         h1 {
-            font-family: 'Lora', serif; /* Use Lora for the heading */
-            color: #0033cc; /* Darker color to contrast */
+            font-family: 'Lora', serif; 
+            color: #0033cc;
             margin-bottom: 20px;
-            font-size: 3em; /* Increased font size */
+            font-size: 3em; 
         }
 
         /* Styling "My Work" specifically */
         h2 {
-            font-size: 4em; /* Increase size of "My Work" */
-            font-family: 'Montserrat', sans-serif; /* Use Montserrat */
-            color: #a64dcb; /* Match gradient color for contrast */
+            font-size: 4em; 
+            font-family: 'Montserrat', sans-serif;
+            color: #a64dcb;
         }
 
         /* Paragraph text */
         p {
-            font-size: 1.5em; /* Increased paragraph text size */
+            font-size: 1.5em; 
             margin-bottom: 20px;
         }
 
         /* Image styling */
         .profile-image {
             border-radius: 50%;
-            width: 200px; /* Increased size */
-            height: 200px; /* Keep aspect ratio */
+            width: 200px; 
+            height: 200px; 
             margin-bottom: 20px;
         }
 
@@ -70,7 +95,7 @@
         ul.custom-list {
             list-style-type: none;
             padding: 0;
-            font-family: 'Montserrat', sans-serif; /* Use Montserrat for list items */
+            font-family: 'Montserrat', sans-serif;
         }
 
         ul.custom-list li {
@@ -79,38 +104,13 @@
 
         ul.custom-list li a {
             text-decoration: none;
-            color: #ffcc00; /* More intense yellow-gold for better contrast */
+            color: #ffcc00; 
             font-weight: bold;
-            font-size: 1.5em; /* Increased font size */
+            font-size: 1.5em; 
         }
 
         ul.custom-list li a:hover {
-            color: #0033cc; /* Dark blue on hover */
-        }
-
-        /* Navigation */
-         nav {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-
-        nav ul {
-            list-style-type: none; /* Remove default list styling */
-            padding: 0; /* Remove padding */
-        }
-
-        nav ul li {
-            display: inline; /* Display list items in a row */
-            margin-right: 20px; /* Space between links */
-        }
-
-        nav ul li a {
-            text-decoration: none; /* Remove underline from links */
-            color: #2980b9; /* Link color */
-        }
-
-        nav ul li a:hover {
-            text-decoration: underline; /* Underline on hover */
+            color: #0033cc; 
         }
     </style>
 </head>
@@ -124,7 +124,7 @@
             <li><a href="blank.html">NAV3</a></li>
         </ul>
     </nav>
-    
+
     <div class="container">
         <h1>Jada Glass</h1>
         

@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -9,7 +10,7 @@
             font-family: Arial, sans-serif;
             margin: 20px;
             padding: 0;
-            background-color: linear-gradient(to right, #e0c3fc, #8ec5fc);
+            background-color: #f9f9f9;
             color: #333;
         }
         h1 {
@@ -56,21 +57,56 @@
             color: #666;
             margin: 5px 0 20px;
         }
+          .container {
+            text-align: center; 
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            width: 80%; 
+            max-width: 800px; 
+        }
+          nav {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        nav ul {
+            list-style-type: none; /* Remove default list styling */
+            padding: 0; /* Remove padding */
+        }
+
+        nav ul li {
+            display: inline; /* Display list items in a row */
+            margin-right: 20px; /* Space between links */
+        }
+
+        nav ul li a {
+            text-decoration: none; /* Remove underline from links */
+            color: #2980b9; /* Link color */
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline; /* Underline on hover */
+        }
     </style>
 </head>
-<body>
+      <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="list1.html">List 1</a></li>
+            <li><a href="list2.html">List 2</a></li>
+            <li><a href="blank.html">NAV3</a></li>
+        </ul>
+    </nav>
+    <body>  
     <h1>8 Best Teen High School Movies from the 2000s</h1>
     <p>The 2000s produced some of the best teen high school movies, capturing the essence of adolescence with humor, heart, and relatable drama. These films often combined sharp wit with genuine emotion, portraying the challenges of growing up, navigating friendships, and discovering identity.</p>
 
     <h2>Movies List</h2>
 
     <div class="movies-list">
-        <div class="movie-item">
-            <img src="mywebsite/glass-media-list/bring-it-on-2000.jpg" alt="Bring It On">
-            <h3>Bring It On (2000)</h3>
-            <p>Directed By: Peyton Reed</p>
-        </div>
-        <div class="movie-item">
+         <div class="movie-item">
             <img src="mywebsite/glass-media-list/high-school-musical-2006.jpg" alt="High School Musical">
             <h3>High School Musical (2006)</h3>
             <p>Directed By: Kenny Ortega</p>

@@ -93,10 +93,12 @@ nav {
 nav ul {
     list-style-type: none; /* Removes bullet points */
     padding: 0; /* Removes default padding */
+    text-align: center; /* Center the nav links */
 }
 
 nav ul li {
-    margin-bottom: 10px; /* Adds space between links */
+    display: inline-block; /* Display list items horizontally */
+    margin: 0 15px; /* Adds space between links */
 }
 
 nav ul li a {

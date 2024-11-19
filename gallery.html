@@ -1,3 +1,57 @@
+<html lang="en">
+ <head>
+        <h1>A walk in the Park </h1>
+        <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+        .gallery {
+            position: relative;
+            width: 80%;
+            max-width: 800px;
+            overflow: hidden;
+            text-align: center;
+        }
+        .gallery-images {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+        .gallery-images img {
+            width: 100%;
+            flex-shrink: 0;
+        }
+        .caption {
+            margin-top: 10px;
+            font-size: 1.2rem;
+            color: #333;
+        }
+        .arrow {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            font-size: 2rem;
+            cursor: pointer;
+            z-index: 10;
+            padding: 0.5rem 1rem;
+        }
+        .arrow.left {
+            left: 10px;
+        }
+        .arrow.right {
+            right: 10px;
+        }
+    </style>
+</head>
 <body>
 <nav>
         <ul>
@@ -6,5 +60,56 @@
             <li><a href="list2.html">List 2</a></li>
             <li><a href="gallery.html">Gallery</a></li>
         </ul>
+        <div class="gallery">
+    <button class="arrow left" onclick="prevImage()">&#8249;</button>
+    <div class="gallery-images">
+        <img src="https://via.placeholder.com/800x400?text=Photo+1" alt="Placeholder 1">
+        <img src="https://via.placeholder.com/800x400?text=Photo+2" alt="Placeholder 2">
+        <img src="https://via.placeholder.com/800x400?text=Photo+3" alt="Placeholder 3">
+        <img src="https://via.placeholder.com/800x400?text=Photo+4" alt="Placeholder 4">
+        <img src="https://via.placeholder.com/800x400?text=Photo+5" alt="Placeholder 5">
+        <img src="https://via.placeholder.com/800x400?text=Photo+6" alt="Placeholder 6">
+        <img src="https://via.placeholder.com/800x400?text=Photo+7" alt="Placeholder 7">
+        <img src="https://via.placeholder.com/800x400?text=Photo+8" alt="Placeholder 8">
+    </div>
+    <button class="arrow right" onclick="nextImage()">&#8250;</button>
+    <div class="caption" id="caption">Caption for Photo 1</div>
+</div>
+
+<script>
+    const galleryImages = document.querySelector('.gallery-images');
+    const captions = [
+        "Caption for Photo 1",
+        "Caption for Photo 2",
+        "Caption for Photo 3",
+        "Caption for Photo 4",
+        "Caption for Photo 5",
+        "Caption for Photo 6",
+        "Caption for Photo 7",
+        "Caption for Photo 8"
+    ];
+    const captionElement = document.getElementById('caption');
+    const totalImages = document.querySelectorAll('.gallery-images img').length;
+    let currentIndex = 0;
+
+    function updateGallery() {
+        galleryImages.style.transform = `translateX(-${currentIndex * 100}%)`;
+        captionElement.textContent = captions[currentIndex];
+    }
+
+    function prevImage() {
+        currentIndex = (currentIndex > 0) ? currentIndex - 1 : totalImages - 1;
+        updateGallery();
+    }
+
+    function nextImage() {
+        currentIndex = (currentIndex < totalImages - 1) ? currentIndex + 1 : 0;
+        updateGallery();
+    }
+</script>
     </nav>
 </body>
+<footer>
+        <p>Jada Glass 2024</p>
+</footer>
+</html>

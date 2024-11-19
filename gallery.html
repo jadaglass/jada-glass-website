@@ -39,23 +39,28 @@
         }
         .gallery-images {
             display: flex;
-            flex-direction: column; /* Switch to vertical layout */
+            flex-direction: row; /* Horizontal layout */
             transition: transform 0.5s ease-in-out;
         }
         .gallery-images img {
             width: 100%;
-            max-height: 400px;
-            margin-bottom: 10px;
+            max-width: 800px;
+            flex-shrink: 0;
+        }
+        .caption-container {
+            margin-top: 10px;
+            text-align: center;
+            position: relative;
         }
         .caption {
-            margin-top: 10px;
             font-size: 1.2rem;
             color: #333;
+            display: inline-block;
         }
         .arrow {
             position: absolute;
-            left: 50%;
-            transform: translateX(-50%);
+            top: 50%;
+            transform: translateY(-50%);
             background-color: rgba(0, 0, 0, 0.5);
             color: white;
             border: none;
@@ -64,11 +69,11 @@
             z-index: 10;
             padding: 0.5rem 1rem;
         }
-        .arrow.up {
-            top: 10px;
+        .arrow.left {
+            left: -50px; /* Adjust positioning for horizontal layout */
         }
-        .arrow.down {
-            bottom: 10px;
+        .arrow.right {
+            right: -50px; /* Adjust positioning for horizontal layout */
         }
         footer {
             text-align: center;
@@ -88,7 +93,7 @@
     </nav>
 
     <div class="gallery">
-        <button class="arrow up" onclick="prevImage()">&#9650;</button>
+        <button class="arrow left" onclick="prevImage()">&#8249;</button>
         <div class="gallery-images">
             <img src="https://via.placeholder.com/800x400?text=Photo+1" alt="Placeholder 1">
             <img src="https://via.placeholder.com/800x400?text=Photo+2" alt="Placeholder 2">
@@ -99,7 +104,9 @@
             <img src="https://via.placeholder.com/800x400?text=Photo+7" alt="Placeholder 7">
             <img src="https://via.placeholder.com/800x400?text=Photo+8" alt="Placeholder 8">
         </div>
-        <button class="arrow down" onclick="nextImage()">&#9660;</button>
+        <button class="arrow right" onclick="nextImage()">&#8250;</button>
+    </div>
+    <div class="caption-container">
         <div class="caption" id="caption">Caption for Photo 1</div>
     </div>
 
@@ -124,7 +131,7 @@
         let currentIndex = 0;
 
         function updateGallery() {
-            galleryImages.style.transform = `translateY(-${currentIndex * 100}%)`;
+            galleryImages.style.transform = `translateX(-${currentIndex * 100}%)`;
             captionElement.textContent = captions[currentIndex];
         }
 

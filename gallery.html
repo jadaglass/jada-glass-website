@@ -57,24 +57,31 @@
             color: #333;
             display: inline-block;
         }
-        .arrow {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            background-color: rgba(0, 0, 0, 0.5);
-            color: white;
-            border: none;
-            font-size: 2rem;
-            cursor: pointer;
-            z-index: 10;
-            padding: 0.5rem 1rem;
-        }
-        .arrow.left {
-            left: -50px; /* Adjust positioning for horizontal layout */
-        }
-        .arrow.right {
-            right: -50px; /* Adjust positioning for horizontal layout */
-        }
+       .arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    z-index: 10;
+    padding: 0.5rem 1rem;
+    opacity: 0.8; /* Slight transparency for better visibility */
+}
+
+.arrow:hover {
+    opacity: 1; /* Fully visible on hover */
+}
+
+.arrow.left {
+    left: 10px; /* Positioned within the visible gallery area */
+}
+
+.arrow.right {
+    right: 10px; /* Positioned within the visible gallery area */
+}
         footer {
             text-align: center;
             margin-top: 20px;

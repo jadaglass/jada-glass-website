@@ -38,28 +38,33 @@
         }
 
         /* Navigation */
-        nav {
+       nav {
+            text-align: center;
             margin-bottom: 20px;
         }
 
         nav ul {
-            list-style-type: none;
-            padding: 0;
-            text-align: center; /* Center the nav items */
+            list-style-type: none; /* Remove default list styling */
+            padding: 0; /* Remove padding */
         }
 
         nav ul li {
-            display: inline; 
-            margin-right: 20px;
+            display: inline; /* Display list items in a row */
+            margin-right: 20px; /* Space between links */
         }
 
         nav ul li a {
-            text-decoration: none;
-            color: #2980b9;
+            display: inline-block; /* Make links behave like buttons */
+            text-decoration: none; /* Remove underline from links */
+            color: #fff; /* Link color */
+            background-color: #5bc0de; /* Button background color */
+            padding: 10px 15px; /* Padding for button size */
+            border-radius: 5px; /* Rounded corners */
+            transition: background-color 0.3s; /* Smooth transition for hover effect */
         }
 
         nav ul li a:hover {
-            text-decoration: underline;
+            background-color: #1c6691; /* Darker background on hover */
         }
 
         /* Header styling */

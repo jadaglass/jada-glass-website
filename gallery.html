@@ -15,19 +15,33 @@
             text-align: center;
             margin: 20px 0;
         }
-        nav ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
+        nav {
             text-align: center;
+            margin-bottom: 20px;
         }
+
+        nav ul {
+            list-style-type: none; /* Remove default list styling */
+            padding: 0; /* Remove padding */
+        }
+
         nav ul li {
-            display: inline;
-            margin: 0 15px;
+            display: inline; /* Display list items in a row */
+            margin-right: 20px; /* Space between links */
         }
+
         nav ul li a {
-            text-decoration: none;
-            color: #007BFF;
+            display: inline-block; /* Make links behave like buttons */
+            text-decoration: none; /* Remove underline from links */
+            color: #fff; /* Link color */
+            background-color: #5bc0de; /* Button background color */
+            padding: 10px 15px; /* Padding for button size */
+            border-radius: 5px; /* Rounded corners */
+            transition: background-color 0.3s; /* Smooth transition for hover effect */
+        }
+
+        nav ul li a:hover {
+            background-color: #1c6691; /* Darker background on hover */
         }
         .gallery {
             position: relative;

@@ -65,7 +65,7 @@
             width: 80%; 
             max-width: 800px; 
         }
-          nav {
+           nav {
             text-align: center;
             margin-bottom: 20px;
         }
@@ -81,12 +81,17 @@
         }
 
         nav ul li a {
+            display: inline-block; /* Make links behave like buttons */
             text-decoration: none; /* Remove underline from links */
-            color: #2980b9; /* Link color */
+            color: #fff; /* Link color */
+            background-color: #5bc0de; /* Button background color */
+            padding: 10px 15px; /* Padding for button size */
+            border-radius: 5px; /* Rounded corners */
+            transition: background-color 0.3s; /* Smooth transition for hover effect */
         }
 
         nav ul li a:hover {
-            text-decoration: underline; /* Underline on hover */
+            background-color: #1c6691; /* Darker background on hover */
         }
     </style>
 </head>

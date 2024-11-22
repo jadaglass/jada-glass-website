@@ -101,8 +101,8 @@
             color: #555; /* Footer text color */
             font-size: 0.9em; /* Slightly smaller font size */
         }
-        .skip-link {
-    position: absolute;
+       .skip-link {
+    position: fixed; /* Keeps the button in a fixed position on the screen */
     top: 10px;
     left: 10px;
     background-color: #ffffff;
@@ -112,15 +112,14 @@
     text-decoration: none;
     font-family: 'Roboto', sans-serif;
     font-size: 1em;
-    z-index: 1000; /* Ensure it stays on top */
-    transform: translateY(-100%);
-    transition: transform 0.3s ease;
+    z-index: 1000; /* Ensure it stays on top of other elements */
+    display: block; /* Ensure it always occupies space */
 }
 
 .skip-link:focus {
-    transform: translateY(0);
-    outline: 2px solid #0033cc;
+    outline: 2px solid #0033cc; /* Add focus outline for accessibility */
 }
+
     </style>
 </head>
 <body class="list-2">

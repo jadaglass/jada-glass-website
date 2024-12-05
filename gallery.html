@@ -6,22 +6,72 @@
     <title>Gallery</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body class="gallery">
-    <a href="#main-content" class="skip-link">Skip to Content</a>
-    <nav>
+ <a href="#main-content" class="skip-link">Skip to Content</a>
+     <nav>
         <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="list1.html">8 Best Teen High School Movies</a></li>
-            <li><a href="list2.html">7 Best Bookstores</a></li>
+            <li><a href="list1.html">8 Best Teen High School Movies from the 2000's</a></li>
+            <li><a href="list2.html">7 Best Bookstores in Saint Louis</a></li>
             <li><a href="gallery.html">Gallery</a></li>
         </ul>
     </nav>
-    <div class="container">
-        <h1>Gallery</h1>
-        <img src="images/bookstore1.jpg" alt="Image of a bookstore">
-        <img src="images/bookstore2.jpg" alt="Image of another bookstore">
-        <!-- Add more images as needed -->
+    
+    <h1>A Walk in the Park</h1>
+    <p> This sequence of photos tells the story of my 1 year old dog, Pebbles, taking an everyday walk. A highlight of her day. 
+        </p>
+
+    <div class="gallery">
+        <button class="arrow left" onclick="prevImage()">&#8249;</button>
+        <div class="gallery-images">
+            <img src="mywebsite/glass-media-list/img1.jpg" alt="Photo 1">
+            <img src="mywebsite/glass-media-list/img2.jpg" alt="Placeholder 2">
+            <img src="mywebsite/glass-media-list/img3.jpg" alt="Placeholder 3">
+            <img src="mywebsite/glass-media-list/img4.jpg" alt="Placeholder 4">
+            <img src="mywebsite/glass-media-list/img5.jpg" alt="Placeholder 5">
+            <img src="mywebsite/glass-media-list/img6.jpg" alt="Placeholder 6">
+            <img src="mywebsite/glass-media-list/img7.jpg" alt="Placeholder 7">
+            <img src="mywebsite/glass-media-list/img8.jpg" alt="Placeholder 8">
+        </div>
+        <button class="arrow right" onclick="nextImage()">&#8250;</button>
     </div>
-    <footer>Jada Glass, 2024</footer>
+    <div class="caption-container">
+        <div class="caption" id="caption">Caption for Photo 1</div>
+    </div>
+
+    <footer>
+        <p>Jada Glass 2024</p>
+    </footer>
+
+    <script>
+        const galleryImages = document.querySelector('.gallery-images');
+        const captions = [
+            "Pebbles has just woken up, stretching.",
+            "Pebbles is very clingy, this is her begging for attention.",
+            "Pebbles loves her toy bin.",
+            "This is how Pebbles lets me know she is ready for the day.",
+            "She knows what this means...",
+            "It’s time for a walk!",
+            "Pebbles does great on the leash. Sometimes.",
+            "We love the outdoors!"
+        ];
+        const captionElement = document.getElementById('caption');
+        const totalImages = document.querySelectorAll('.gallery-images img').length;
+        let currentIndex = 0;
+
+        function updateGallery() {
+            galleryImages.style.transform = translateX(-${currentIndex * 100}%);
+            captionElement.textContent = captions[currentIndex];
+        }
+
+        function prevImage() {
+            currentIndex = (currentIndex > 0) ? currentIndex - 1 : totalImages - 1;
+            updateGallery();
+        }
+
+        function nextImage() {
+            currentIndex = (currentIndex < totalImages - 1) ? currentIndex + 1 : 0;
+            updateGallery();
+        }
+    </script>
 </body>
 </html>

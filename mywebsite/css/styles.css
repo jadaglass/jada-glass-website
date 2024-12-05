@@ -1,161 +1,171 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html, body {
-    height: 100%;
-    margin: 0;
+/* Global Styles */
+body {
     font-family: Arial, sans-serif;
-    background: linear-gradient(to bottom, #3366ff, #6b33b2, #a64dcb); /* Corrected gradient background */
-    display: flex;
-    align-items: center; /* Centers content vertically */
+    margin: 20px;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
 }
 
-/* Main container for the content */
 .container {
-    text-align: center; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
     padding: 20px;
     background-color: white;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
-    width: 80%; 
-    max-width: 800px; 
+    width: 80%;
+    max-width: 800px;
+    margin: auto;
 }
 
-/* Header styling */
-h1 {
-    font-family: 'Georgia', serif;
-    color: #0033cc; /* Darker color to contrast */
-    margin-bottom: 20px;
-    font-size: 3em; /* Increased font size */
-}
-
-/* Paragraph text */
-p {
-    font-size: 1.5em; /* Increased paragraph text size */
+nav {
+    text-align: center;
     margin-bottom: 20px;
 }
 
-/* Image styling */
-.profile-image {
-    border-radius: 50%;
-    width: 200px; /* Increased size */
-    height: 200px; /* Keep aspect ratio */
-    margin-bottom: 20px;
-}
-
-/* List styling */
-ul.custom-list {
+nav ul {
     list-style-type: none;
     padding: 0;
 }
 
-ul.custom-list li {
-    margin: 10px 0;
-}
-
-ul.custom-list li a {
-    text-decoration: none;
-    color: #ffcc00; /* More intense yellow-gold for better contrast */
-    font-weight: bold;
-    font-size: 1.5em; /* Increased font size */
-}
-
-ul.custom-list li a:hover {
-    color: #0033cc; /* Dark blue on hover */
-}
-
-/* Navigation */
-nav {
-    margin-top: 20px;
-}
-
-nav a {
-    margin: 0 15px;
-    text-decoration: none;
-    color: #ff3300; /* Stronger OrangeRed for high visibility */
-    font-weight: bold;
-    font-size: 1.5em; /* Increased font size */
-}
-
-nav a:hover {
-    color: #0033cc; /* Dark blue on hover */
-}
-
-nav {
-    position: absolute; /* Aligns the nav off to the left */
-    left: 20px; /* Adjust the distance from the left side */
-    top: 50px; /* Adjust the distance from the top */
-}
-
-nav ul {
-    list-style-type: none; /* Removes bullet points */
-    padding: 0; /* Removes default padding */
-    text-align: center; /* Center the nav links */
-}
-
 nav ul li {
-    display: inline-block; /* Display list items horizontally */
-    margin: 0 15px; /* Adds space between links */
+    display: inline;
+    margin-right: 20px;
 }
 
 nav ul li a {
-    text-decoration: none; /* Removes underline from links */
-    color: #ff69b4; /* Cute pink color */
-    font-size: 18px; /* Increases font size */
-    font-family: 'Comic Sans MS', cursive; /* Adds a fun, cute font */
-    padding: 8px 12px; /* Adds padding for a cute button effect */
-    border: 2px solid #ff69b4; /* Adds a border with matching color */
-    border-radius: 10px; /* Rounded edges for a softer look */
-    transition: background-color 0.3s ease; /* Smooth background color transition */
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    background-color: #5bc0de;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
 }
 
 nav ul li a:hover {
-    background-color: #ff69b4; /* Changes background on hover */
-    color: white; /* Changes text color on hover */
+    background-color: #1c6691;
 }
 
-.list2 h1 {
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px 0;
+    color: #555;
+    font-size: 0.9em;
+}
+
+.skip-link {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    background-color: #ffffff;
+    color: #0033cc;
+    padding: 8px 12px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1em;
+    z-index: 1000;
+    display: block;
+}
+
+.skip-link:focus {
+    outline: 2px solid #0033cc;
+}
+
+/* Home Page Styles */
+.home h1 {
+    font-size: 2.5em;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.home p {
+    font-size: 1.2em;
+    line-height: 1.8;
+    color: #555;
+}
+
+/* 8 Best Teen High School Movies Page Styles */
+.movies-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.movie-item {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.movie-item img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+}
+
+.movie-item h3 {
+    color: #333;
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.movie-item p {
+    color: #666;
+    margin: 5px 0 20px;
+}
+
+/* 7 Best Bookstores Page Styles */
+.list-2 h1 {
     font-size: 2.2em;
     color: #2c3e50;
     text-align: center;
     margin-bottom: 20px;
 }
 
-.list2 p {
+.list-2 p {
     font-size: 1em;
     line-height: 1.6;
     color: #555;
 }
 
-.list2 h2 {
+.list-2 h2 {
     font-size: 1.5em;
     margin-top: 20px;
     color: #2980b9;
 }
 
-.list2 a {
+.list-2 a {
     color: #e74c3c;
     text-decoration: none;
 }
 
-.list2 a:hover {
+.list-2 a:hover {
     text-decoration: underline;
 }
 
-.list2 .bookstore {
+.list-2 .bookstore {
     margin-bottom: 20px;
 }
 
-.list2 .bookstore p {
+.list-2 .bookstore p {
     margin: 5px 0;
 }
- footer {
-            text-align: center; /* Center text */
-            margin-top: 20px; /* Space above footer */
-            padding: 10px 0; /* Padding inside footer */
-            color: #555; /* Footer text color */
-            font-size: 0.9em; /* Slightly smaller font size */
-        }
+
+/* Gallery Page Styles */
+.gallery img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}

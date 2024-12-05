@@ -5,139 +5,107 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jada Glass</title>
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@700&family=Montserrat:wght@600&family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <style>
-        * {
-            margin: 0;
+        /* Shared styles for both pages */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
             padding: 0;
-            box-sizing: border-box;
+            background-color: #f9f9f9;
+            color: #333;
         }
 
-        html, body {
-            height: 100%;
-            margin: 0;
-            font-family: 'Roboto', sans-serif;
-            background: linear-gradient(to bottom, #3366ff, #6b33b2, #a64dcb);
+        .container {
             display: flex;
-            justify-content: center;
-            align-items: center;
             flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            width: 80%;
+            max-width: 800px;
+            margin: 20px auto;
         }
 
-        /* Main container for the content */
-       .container {
-    text-align: center; 
-    padding: 20px;
-    background-color: white;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    width: 80%; 
-    max-width: 800px; 
-    margin-top: 50px; /* Adjust this value as needed */
-}
-
-        }
-
-        /* Navigation */
         nav {
+            text-align: center;
             margin-bottom: 20px;
         }
 
         nav ul {
             list-style-type: none;
             padding: 0;
-            text-align: center; /* Center the nav items */
         }
 
         nav ul li {
-            display: inline; 
+            display: inline;
             margin-right: 20px;
         }
 
         nav ul li a {
+            display: inline-block;
             text-decoration: none;
-            color: #2980b9;
+            color: #fff;
+            background-color: #5bc0de;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
         }
 
         nav ul li a:hover {
-            text-decoration: underline;
+            background-color: #1c6691;
         }
 
-        /* Header styling */
         h1 {
-            font-family: 'Lora', serif; 
-            color: #0033cc;
+            font-size: 2.2em;
+            color: #2c3e50;
+            text-align: center;
             margin-bottom: 20px;
-            font-size: 3em; 
         }
 
-        /* Styling "My Work" specifically */
-        h2 {
-            font-size: 4em; 
-            font-family: 'Montserrat', sans-serif;
-            color: #a64dcb;
-        }
-
-        /* Paragraph text */
         p {
-            font-size: 1.5em; 
-            margin-bottom: 20px;
+            font-size: 1em;
+            line-height: 1.6;
+            color: #555;
         }
 
-        /* Image styling */
-        .profile-image {
-            border-radius: 50%;
-            width: 200px; 
-            height: 200px; 
-            margin-bottom: 20px;
+        h2 {
+            font-size: 1.5em;
+            margin-top: 20px;
+            color: #2980b9;
         }
 
-        /* List styling */
-        ul.custom-list {
-            list-style-type: none;
-            padding: 0;
-            font-family: 'Montserrat', sans-serif;
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            padding: 10px 0;
+            color: #555;
+            font-size: 0.9em;
         }
 
-        ul.custom-list li {
-            margin: 10px 0;
-        }
-
-        ul.custom-list li a {
-            text-decoration: none;
-            color: #ffcc00; 
-            font-weight: bold;
-            font-size: 1.5em; 
-        }
-
-        ul.custom-list li a:hover {
-            color: #0033cc; 
-        }
         .skip-link {
-    position: fixed; /* Keeps the button in a fixed position on the screen */
-    top: 10px;
-    left: 10px;
-    background-color: #ffffff;
-    color: #0033cc;
-    padding: 8px 12px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-family: 'Roboto', sans-serif;
-    font-size: 1em;
-    z-index: 1000; /* Ensure it stays on top of other elements */
-    display: block; /* Ensure it always occupies space */
-}
+            position: fixed;
+            top: 10px;
+            left: 10px;
+            background-color: #ffffff;
+            color: #0033cc;
+            padding: 8px 12px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 1em;
+            z-index: 1000;
+        }
 
-.skip-link:focus {
-    outline: 2px solid #0033cc; /* Add focus outline for accessibility */
-}
-
+        .skip-link:focus {
+            outline: 2px solid #0033cc;
+        }
     </style>
 </head>
-<body class="home-page"> 
-<a href="#main-content" class="skip-link">Skip to Content</a>
+<body>
+    <a href="#main-content" class="skip-link">Skip to Content</a>
     <nav>
         <ul>
             <li><a href="index.html">Home</a></li>
@@ -146,33 +114,24 @@
             <li><a href="gallery.html">Gallery</a></li>
         </ul>
     </nav>
-
     <div class="container">
         <h1>Jada Glass</h1>
-        
         <a href="mailto:jcg2wc@umsystem.edu">
             <img src="https://github.com/user-attachments/assets/059c87d0-0067-4818-846d-539b64e5aefd" alt="Headshot" style="width:100px;height:100px;">
-            <p style="font-family: 'Montserrat', sans-serif; font-size: 1.5em; color: #0033cc; margin-top: 10px;">E-mail Me</p>
+            <p style="font-size: 1em; color: #2980b9;">E-mail Me</p>
         </a>
-        
         <p>My name is Jada Glass. I am a senior at the University of Missouri studying journalism. I have a dog named Pebbles who I love. Gray is my favorite color! This is my paragraph text.</p>
         
         <h2>My Work</h2>
-        <ul class="custom-list">
+        <ul>
             <li><a href="https://kcou.fm">Jada's Jams Radio Show Broadcast Stream</a></li>
             <li><a href="https://journalism.missouri.edu">University of Missouri Journalism School</a></li>
-            <li><a href="https://youtube.com/@girlwydpod?si=oNX3SvT94i6XaBlX">Girl Wyd? Podcast with Jada Cheyenne</a></li>
-            <li><a href="https://rjionline.org/news/developing-a-tiktok-campaign-to-boost-high-school-sports-coverage">RJI Fellowship Article</a></li>
-            <li><a href="https://rjionline.org/news/how-to-increase-community-engagement-on-facebook">RJI Fellowship Article 2</a></li>
+            <li><a href="https://youtube.com/@girlwydpod">Girl Wyd? Podcast</a></li>
         </ul>
-        
-        <nav>
-            <a href="Contact">Contact</a>
-            <a href="https://www.linkedin.com/in/jada-glass-20a496227" target="_blank">LinkedIn</a>
-        </nav>
     </div>
-<footer>
+    <footer>
         Jada Glass, 2024
     </footer>
 </body>
 </html>
+

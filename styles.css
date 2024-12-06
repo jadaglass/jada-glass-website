@@ -12,7 +12,7 @@ html, body {
     font-family: Arial, sans-serif;
     background-color: #f9f9f9; /* Default background, can be overridden per page */
     color: #333;
-    display: column;
+    display: block;
     align-items: center;
     justify-content: center;
 }

@@ -9,7 +9,7 @@ html, body {
     height: 100%;
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #B3D9FF; /* Soft pastel blue background */
+    background-color: #B3D9FF !important; /* Soft pastel blue background */
     color: #333333; /* Dark gray for text */
     text-align: center;
 }

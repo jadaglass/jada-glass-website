@@ -4,146 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>A Walk in the Park</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f0f0f0;
-        }
-         .container {
-            display: flex;            /* Enable flexbox layout */
-            flex-direction: column;   /* Stack children vertically */
-            align-items: center;      /* Center items horizontally */
-            text-align: center;       /* Center text */
-            padding: 20px;
-            background-color: white;
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-            border-radius: 10px;
-            width: 80%; 
-            max-width: 800px; 
-            margin-left: auto;        /* Center the container in the middle */
-            margin-right: auto;       /* Optional: this can be added for better centering */
-        }
-        h1 {
-            text-align: center;
-            margin: 20px 0;
-        }
-         p {
-            text-align: center;
-            color: #555;
-            margin-bottom: 40px;
-            line-height: 1.8;
-        }
-        nav {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-
-        nav ul {
-            list-style-type: none; /* Remove default list styling */
-            padding: 0; /* Remove padding */
-        }
-
-        nav ul li {
-            display: inline; /* Display list items in a row */
-            margin-right: 20px; /* Space between links */
-        }
-
-        nav ul li a {
-            display: inline-block; /* Make links behave like buttons */
-            text-decoration: none; /* Remove underline from links */
-            color: #fff; /* Link color */
-            background-color: #5bc0de; /* Button background color */
-            padding: 10px 15px; /* Padding for button size */
-            border-radius: 5px; /* Rounded corners */
-            transition: background-color 0.3s; /* Smooth transition for hover effect */
-        }
-
-        nav ul li a:hover {
-            background-color: #1c6691; /* Darker background on hover */
-        }
-        .gallery {
-            position: relative;
-            width: 100%;
-            max-width: 400px;
-            margin: 20px auto;
-            overflow: hidden;
-            text-align: center;
-        }
-        .gallery-images {
-            display: flex;
-            flex-direction: row; /* Horizontal layout */
-            transition: transform 0.5s ease-in-out;
-        }
-        .gallery-images img {
-            width: 100%;
-            max-width: 400px;
-            flex-shrink: 0;
-        }
-        .caption-container {
-            margin-top: 10px;
-            text-align: center;
-            position: relative;
-       
-        .caption {
-            font-size: 1.2rem;
-            color: #333;
-            display: inline-block;
-        }
-       .arrow {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    font-size: 2rem;
-    cursor: pointer;
-    z-index: 10;
-    padding: 0.5rem 1rem;
-    opacity: 0.8; /* Slight transparency for better visibility */
-}
-
-.arrow:hover {
-    opacity: 1; /* Fully visible on hover */
-}
-
-.arrow.left {
-    left: 10px; /* Positioned within the visible gallery area */
-}
-
-.arrow.right {
-    right: 10px; /* Positioned within the visible gallery area */
-}
-        footer {
-            text-align: center;
-            margin-top: 20px;
-        }
-.skip-link {
-    position: fixed; /* Keeps the button in a fixed position on the screen */
-    top: 10px;
-    left: 10px;
-    background-color: #ffffff;
-    color: #0033cc;
-    padding: 8px 12px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-family: 'Roboto', sans-serif;
-    font-size: 1em;
-    z-index: 1000; /* Ensure it stays on top of other elements */
-    display: block; /* Ensure it always occupies space */
-}
-
-.skip-link:focus {
-    outline: 2px solid #0033cc; /* Add focus outline for accessibility */
-}
-
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body class="gallery-page">
     <a href="#main-content" class="skip-link">Skip to Content</a>
-     <nav>
+    <nav>
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="list1.html">8 Best Teen High School Movies from the 2000's</a></li>
@@ -151,29 +16,28 @@
             <li><a href="gallery.html">Gallery</a></li>
         </ul>
     </nav>
-    
-    <h1>A Walk in the Park</h1>
-    <p> This sequence of photos tells the story of my 1 year old dog, Pebbles, taking an everyday walk. A highlight of her day. 
-        </p>
+    <div class="container">
+        <h1>A Walk in the Park</h1>
+        <p>This sequence of photos tells the story of my 1-year-old dog, Pebbles, taking an everyday walk. A highlight of her day.</p>
 
-    <div class="gallery">
-        <button class="arrow left" onclick="prevImage()">&#8249;</button>
-        <div class="gallery-images">
-            <img src="mywebsite/glass-media-list/img1.jpg" alt="Photo 1">
-            <img src="mywebsite/glass-media-list/img2.jpg" alt="Placeholder 2">
-            <img src="mywebsite/glass-media-list/img3.jpg" alt="Placeholder 3">
-            <img src="mywebsite/glass-media-list/img4.jpg" alt="Placeholder 4">
-            <img src="mywebsite/glass-media-list/img5.jpg" alt="Placeholder 5">
-            <img src="mywebsite/glass-media-list/img6.jpg" alt="Placeholder 6">
-            <img src="mywebsite/glass-media-list/img7.jpg" alt="Placeholder 7">
-            <img src="mywebsite/glass-media-list/img8.jpg" alt="Placeholder 8">
+        <div class="gallery">
+            <button class="arrow left" onclick="prevImage()">&#8249;</button>
+            <div class="gallery-images">
+                <img src="mywebsite/glass-media-list/img1.jpg" alt="Pebbles has just woken up, stretching.">
+                <img src="mywebsite/glass-media-list/img2.jpg" alt="Pebbles is very clingy, this is her begging for attention.">
+                <img src="mywebsite/glass-media-list/img3.jpg" alt="Pebbles loves her toy bin.">
+                <img src="mywebsite/glass-media-list/img4.jpg" alt="This is how Pebbles lets me know she is ready for the day.">
+                <img src="mywebsite/glass-media-list/img5.jpg" alt="She knows what this means...">
+                <img src="mywebsite/glass-media-list/img6.jpg" alt="It’s time for a walk!">
+                <img src="mywebsite/glass-media-list/img7.jpg" alt="Pebbles does great on the leash. Sometimes.">
+                <img src="mywebsite/glass-media-list/img8.jpg" alt="We love the outdoors!">
+            </div>
+            <button class="arrow right" onclick="nextImage()">&#8250;</button>
         </div>
-        <button class="arrow right" onclick="nextImage()">&#8250;</button>
+        <div class="caption-container">
+            <div class="caption" id="caption">Pebbles has just woken up, stretching.</div>
+        </div>
     </div>
-    <div class="caption-container">
-        <div class="caption" id="caption">Caption for Photo 1</div>
-    </div>
-
     <footer>
         <p>Jada Glass 2024</p>
     </footer>
@@ -208,6 +72,13 @@
             currentIndex = (currentIndex < totalImages - 1) ? currentIndex + 1 : 0;
             updateGallery();
         }
+
+        /* Optional: Keyboard navigation */
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowLeft') prevImage();
+            if (e.key === 'ArrowRight') nextImage();
+        });
     </script>
 </body>
 </html>
+

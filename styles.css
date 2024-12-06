@@ -35,28 +35,30 @@ html, body {
 
 /* Navigation */
 nav {
-    text-align: center;
+    display: flex; /* Use flex to align items side by side */
+    justify-content: center; /* Center the items horizontally */
     margin-bottom: 20px;
 }
 
 nav ul {
     list-style-type: none;
     padding: 0;
+    display: flex; /* Flex for horizontal list */
 }
 
 nav ul li {
-    display: block; /* Stack items vertically */
-    margin-bottom: 10px; /* Space between links */
+    margin-right: 15px; /* Space between buttons */
 }
 
 nav ul li a {
-    display: block; /* Make each link take up the whole width */
+    display: inline-block; /* Make the links appear like buttons */
     text-decoration: none;
     color: #fff;
     background-color: #5bc0de;
     padding: 10px 15px;
     border-radius: 5px;
     transition: background-color 0.3s;
+    font-weight: bold;
 }
 
 nav ul li a:hover {
@@ -217,13 +219,15 @@ footer {
 }
 
 .gallery-page .gallery-images {
-    display: block; /* Stack images vertically */
-    transition: transform 0.5s ease-in-out;
+    display: flex;
+    transition: transform 0.5s ease-in-out; /* Smooth transition between images */
+    width: 100%; /* Full width to allow sliding between images */
 }
 
 .gallery-page .gallery-images img {
-    width: 100%;
+    width: 100%; /* Only one image visible at a time */
     max-width: 400px;
+    flex-shrink: 0; /* Prevent images from shrinking */
 }
 
 .gallery-page .caption-container {
@@ -236,4 +240,30 @@ footer {
     font-size: 1.2rem;
     color: #333;
     display: inline-block;
+}
+
+.gallery-page .arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    z-index: 10;
+    padding: 0.5rem 1rem;
+    opacity: 0.8;
+}
+
+.gallery-page .arrow:hover {
+    opacity: 1;
+}
+
+.gallery-page .arrow.left {
+    left: 10px;
+}
+
+.gallery-page .arrow.right {
+    right: 10px;
 }

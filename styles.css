@@ -107,8 +107,8 @@ footer {
 
 /* ------------------- PAGE-SPECIFIC STYLES ------------------- */
 .list1-page .movie-item img {
-    width: 100%;          /* Let the image take up the full width of the container */
-    max-width: 600px;     /* Set a maximum width to prevent it from becoming too large */
+    width: 85%;          /* Let the image take up the full width of the container */
+    max-width: 400px;     /* Set a maximum width to prevent it from becoming too large */
     height: auto;         /* Maintain aspect ratio of the images */
     object-fit: cover;    /* Ensure the image covers the area without distortion */
 }

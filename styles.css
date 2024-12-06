@@ -214,7 +214,7 @@ footer {
 .gallery-page .gallery {
     position: relative;
     width: 100%;
-    max-width: 400px;
+    max-width: 600px; /* Set max width for the gallery */
     margin: 20px auto;
     overflow: hidden;
     text-align: center;
@@ -222,13 +222,12 @@ footer {
 
 .gallery-page .gallery-images {
     display: flex;
-    transition: transform 0.5s ease-in-out; /* Smooth transition between images */
-    width: 100%; /* Full width to allow sliding between images */
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
 }
 
 .gallery-page .gallery-images img {
-    width: 100%; /* Only one image visible at a time */
-    max-width: 400px;
+    width: 100%; /* Ensure only one image is shown at a time */
     flex-shrink: 0; /* Prevent images from shrinking */
 }
 
@@ -241,7 +240,6 @@ footer {
 .gallery-page .caption {
     font-size: 1.2rem;
     color: #333;
-    display: inline-block;
 }
 
 .gallery-page .arrow {

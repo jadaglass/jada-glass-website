@@ -34,24 +34,25 @@ html, body {
 }
 
 /* Navigation */
+/* Navigation */
 nav {
-    display: flex; /* Use flex to align items side by side */
-    justify-content: center; /* Center the items horizontally */
+    display: flex;
+    justify-content: center; /* Ensures buttons are centered */
     margin-bottom: 20px;
 }
 
 nav ul {
     list-style-type: none;
     padding: 0;
-    display: flex; /* Flex for horizontal list */
+    display: flex;
 }
 
 nav ul li {
-    margin-right: 15px; /* Space between buttons */
+    margin-right: 15px;
 }
 
 nav ul li a {
-    display: inline-block; /* Make the links appear like buttons */
+    display: inline-block;
     text-decoration: none;
     color: #fff;
     background-color: #5bc0de;
@@ -64,6 +65,7 @@ nav ul li a {
 nav ul li a:hover {
     background-color: #1c6691;
 }
+
 
 /* General Container */
 .container {
